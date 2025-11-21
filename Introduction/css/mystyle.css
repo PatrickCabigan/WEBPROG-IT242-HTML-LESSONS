@@ -1,8 +1,16 @@
 body {
-    background-color: lightblue;
+    background-image: url("https://www.taguig.gov.ph/assets/images/infrastructure/img_1.1.jpg");
 }
  
 h1 {
-    color: navy;
+    color: rgb(120, 153, 0);
     margine-left: 20px;
+}
+
+p {
+    color: rgb(255, 255, 255)
+    
+}
+p {
+    font-style: italic;
 }
