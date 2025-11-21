@@ -1,13 +1,10 @@
 body {
     background-color: lightblue;
-    background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: scroll;
 }
 
 h1 {
     color: rgb(100, 248, 70);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 6, 6);
     margine-left: 20px;
 }
 
