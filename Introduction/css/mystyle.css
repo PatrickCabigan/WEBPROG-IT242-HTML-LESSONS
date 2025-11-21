@@ -1,7 +1,7 @@
 body {
     background-image: url("https://www.taguig.gov.ph/assets/images/infrastructure/img_1.1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto; 
 }
 
 h1 {
