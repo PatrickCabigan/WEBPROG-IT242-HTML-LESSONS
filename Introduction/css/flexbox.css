@@ -11,14 +11,14 @@ body {
 header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
+  background: #66008f;
   color: white;
 }
 
 /* Top navigation bar */
 .navbar {
   display: flex;
-  background-color: #333;
+  background-color: #000274;
 }
 
 /* Navigation bar links */
