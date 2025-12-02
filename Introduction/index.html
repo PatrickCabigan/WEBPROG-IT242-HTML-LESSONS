@@ -3,71 +3,215 @@
 <head>
     <link rel="stylesheet" href="css/rwd.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PatrickCabigan</title>
+<title>Patrick Cabigan Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
- 
-<h1>Personal Profile Web page </h1>
-<p>
- 
-About Me<br>
-I live in Taguig City and I graduated at Signal Village National HighSchool and I want to become an Pilot<br>
- 
-Education: Kinder to Senior High School / With Honors<br>
- 
-Course: BSIT <br>
- 
-Experience in IT: Create game with python, Create app using outsystems, html in github<br>
- 
-Hobbies & Interests: <br>
 
-- Sleep<br>
-- Travel<br>
-- Astronomy<br>
-- Aviation<br>
-- Anime<br>
-- MLBB<br>
-- Cooking<br>
- 
-Goals In Life / Dream:  To become a succesful happy person and to become an pilot<br>
- 
-Picture Gallery<br>
-<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png">
-</p>
- 
- <div class="grid-container">
+<body class="w3-black">
 
-<div class="header"><h1>Sourcesogon</h1></div>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<div class="menu">
-  <ul>
-    <li>The Flight</li>
-    <li>The City</li>
-    <li>The Island</li>
-    <li>The Food</li>
-  </ul>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
 </div>
 
-<div class="content">
-  <h1>The City</h1>
-  <p>Sourecesogon is the capital of the Sorsogon region on the island of Atlantis.</p>
-  <p>The city can be divided in two parts, the Biringan town and the Kalokohan city. The Biringan town is situated next to the old pearl harbour and is the matrix around which the whole urban area was developed.</p>
-  <p>Sourcesogon lies along the north west coast of the island Atlantis.</p>
-</div>  
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Patrick!</h1>
+    <p>IT Student and Web Designer.</p>
+    <img src="https://wallpapers.com/images/hd/steph-curry-3840-x-2400-picture-c0dx6pa2yq7c2og8.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-<div class="facts">
-  <h2>Facts:</h2>
-  <ul>
-    <li>Sourcesogon is a city on the island of Atlantis</li>
-    <li>Sourcesogon is the hometown of Patrick Cabigan</li>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Sorsogon_Provincial_Seal.png" style="width:100%">
-  </ul>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">John Patrick Cabigan's Info:</h2>
+    <hr style="width:500px" class="w3-opacity">
+    <p>I am a very energetic person, about 5 foot 10 tall, and I live in Taguig City. I love to travel much and explore new places. My favorite things to do are to eat food, sleep, and take pictures with my camera (photography). I also like to edit my photos after I take them. I was born in Donsol, Sorsogon, but I am also half-Zambal because my father is from Zambales. I finished my junior and senior high school at Signal Village National High School. I have some experience in IT, including UI/UX design, using tools like Figma and OutSystems, and writing basic HTML. I also know a little about Java and Python; I even made a "Whack-a-Mole" game using Python before. They said my ancestors came from Vietnam.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Cramming</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14</span><br>
+        Manga's Collected
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">12</span><br>
+        Airplane Models
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">999+</span><br>
+        Overthinking
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Coffee Drinked
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download My Profile?
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Hobbies and Interest</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Hobbies</li>
+          <li class="w3-padding-16">Travel</li>
+          <li class="w3-padding-16">Cooking</li>
+          <li class="w3-padding-16">Gaming</li>
+          <li class="w3-padding-16">Designing</li>
+          <li class="w3-padding-16">
+            <h2>Overthinks</h2>
+            <span class="w3-opacity"> 999+ per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">See More</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Interest</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Manga and Airplane Collection</li>
+          <li class="w3-padding-16">Video Editing</li>
+          <li class="w3-padding-16">
+            <h2>Cats</h2>
+            <span class="w3-opacity"> 20+ scratches per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">See More</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Honeycakez</h3>  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdUqjXYZhoU58myZ6iZ19yfgyyJVmm_dtCA&s" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Sawako Batumbakal.</span> CEO at Sorsogon Hotel.</p>
+    <p>Sawako Batumbakal saved me from a kalabaw attack.</p><br>
+    
+    <img src="https://lh6.googleusercontent.com/proxy/PDbNy3r58OwmCrnG-Ddg-LwowV8Z6dnCe1aVKEiMXpaQTPjoZw4rtSQbC0f-Ld9dmd70WGH8nuAbbN5IvACoj-XTFs9jUlXiMftV3l_SJXs2ZdLqnITpOg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Yuri Dela Cruz.</span> CEO at Posa Company.</p>
+    <p>Yuri Dela Cruz help me to steal the moon.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/css-flexbox/Vision%20Board%20Photo%20Collage%20A4%20Document.png?raw=true" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Taguig, JP</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +63 909090909</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kalabaw@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a money:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Amount" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Credit Card No." required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MONEY
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">PATRICK</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
 </div>
 
-<div class="footer"><p>Sourcesogon is the best region in the last city of Atlantis.</p></div>
-  
-  
-</div>
-  
 </body>
 </html>
