@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+   <title>Bootstrap 5 Patrick</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<title>PatrickCabigan</title>
 </head>
 <body>
  
-<h1>Personal Profile Web page </h1>
-<p>
- 
-About Me<br>
-I live in Taguig City and I graduated at Signal Village National HighSchool and I want to become an Pilot<br>
- 
-Education: Kinder to Senior High School / With Honors<br>
- 
-Course: BSIT <br>
- 
-Experience in IT: Create game with python, Create app using outsystems, html in github<br>
- 
-Hobbies & Interests: <br>
+<div class="p-5  bg-gradient bg-dark text-white text-center">
+  <h1>John Patrick Cabigan</h1>
+  <p>My Profile Informations!</p> 
+</div>
 
-- Sleep<br>
-- Travel<br>
-- Astronomy<br>
-- Aviation<br>
-- Anime<br>
-- MLBB<br>
-- Cooking<br>
- 
-Goals In Life / Dream:  To become a succesful happy person and to become an pilot<br>
- 
-Picture Gallery<br>
-<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
-</p>
- 
-
-<div class="container-fluid mt-3">
-  <h1>Responsive Auto Layout Columns Meow</h1>
-  <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
-  <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 2</div>
-      <div class="col-md bg-dark text-white">2 of 2</div>
-    </div>  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">My Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://media.tenor.com/x7cIqOATuOUAAAAe/ikaw-ay-nakalabaw-kalabaw-lamaw.png">Kalabaw</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://contents.pep.ph/images2/images2/2025/09/25/img-8447-1758806495.jpg">Posa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://youtu.be/dQw4w9WgXcQ?si=-m6JdkpJLgFrThWA">Pagong</a>
+      </li>
+    </ul>
   </div>
-  <br>
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 4</div>
-      <div class="col-md bg-dark text-white">2 of 4</div>
-      <div class="col-md bg-primary text-white">3 of 4</div>
-      <div class="col-md bg-dark text-white">4 of 4</div>
-    </div>  
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJF8ohYyZrh3n3awmiXY3FPzvE2LNpgKjYpQ&s" style= "width:100%"></div><br>
+      <p>I am a very energetic person, about 5 foot 10 tall, and I live in Taguig City.</p>
+      <h3 class="mt-4">View More?</h3>
+      <p>Click Some of my Links here:</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://youtu.be/dQw4w9WgXcQ?si=V-7Kj1rV2ZC1kO0Z">Credit Card</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Leo_symbol_%28bold%29.svg/1200px-Leo_symbol_%28bold%29.svg.png">Zodiac</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://media.tenor.com/28ZaziH4y1kAAAAM/ugly-plankton-meme-ugly-plankton.gif">Rank</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://i.redd.it/wj5chmfh0a1a1.jpg">Pets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwYgYiyyzhADus_-78-gqDJ6vPw9gle1Fbg&s">Address</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="https://lh6.googleusercontent.com/proxy/PDbNy3r58OwmCrnG-Ddg-LwowV8Z6dnCe1aVKEiMXpaQTPjoZw4rtSQbC0f-Ld9dmd70WGH8nuAbbN5IvACoj-XTFs9jUlXiMftV3l_SJXs2ZdLqnITpOg">Honeycakez</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>Hobbies and Interest:
+      <h6>Here is the list of my Interest <br>
+      <div><img src= "https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/css-flexbox/Vision%20Board%20Photo%20Collage%20A4%20Document.png?raw=true" style= "width:50%"></div>
+      <p>Extra Info About Me:
+      <p>I have a lively range of interests centered on exploration and creativity. I love traveling a lot, often driven by my passion for airplanes and aviation, which includes collecting model airplanes. My creative outlet is photography, where I take and edit pictures meticulously. For fun, I enjoy hanging out with friends, getting into anime, playing MLBB, and collecting mangas. Simple pleasures like eating and sleeping round out my favorite pastimes.</p>
+
+<div>
+      <h2 class="mt-5">Education and IT experiences:
+      <h6>School year from 2011-2028 (kinder to graduate) </h6>
+      <div><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjj4E4AKRLI-qmR2jOn2Mtxu323LRS4h8fQ&s" style= "width:50%"><img src= "https://mma.prnewswire.com/media/2539296/OutSystems_Logo.jpg?p=facebook" style= "width:50%"></div>
+      <p>I completed my entire secondary education, covering both Junior High and Senior High School, at Signal Village National High School. After that, I attended Asia Pacific College, where I further enhanced and deepened my IT skills and knowledge.</p><br>
+      <p>My IT skills cover UI/UX design using Figma and working with platforms like OutSystems. I write HTML and have basic knowledge of Java and Python, notably having built a "Whack-a-Mole" game.</p>
+    </div>
   </div>
 </div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>That's all Folks!</p>
+</div>
+
+
  
   
 </body>
