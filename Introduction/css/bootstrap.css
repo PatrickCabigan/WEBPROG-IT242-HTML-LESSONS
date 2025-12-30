@@ -1,4 +1,38 @@
-.fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Hero Section Gradient */
+header.bg-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #343a40 100%);
+}
+
+/* Image Hover Effects */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
