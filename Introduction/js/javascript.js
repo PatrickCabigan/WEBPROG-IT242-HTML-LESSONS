@@ -1,7 +1,13 @@
+// Aesthetic Theme Toggle logic
 function toggleDarkMode() {
     var element = document.body;
     element.classList.toggle("dark-theme");
-    console.log("Aesthetic Switch toggled!");
+    
+    // Check connection in Console
+    console.log("Aesthetic mode changed by John Patrick");
 }
 
-console.log("javascript.js is connected and ready!");
+// Logic to confirm file connection
+window.onload = function() {
+    console.log("javascript.js is active and connected!");
+};
