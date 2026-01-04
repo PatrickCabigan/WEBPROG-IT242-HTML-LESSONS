@@ -1,8 +1,57 @@
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #080101;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/* * Custom Styles for John Patrick 
+* Dandelion Gold Color Scheme
+*/
+
+:root {
+    --dandelion: #F4C430;
+    --gold: #D4AF37;
+    --soft-yellow: #FFF9E3;
+    --dark-accent: #2c2c2c;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Gold/Yellowish Scheme Classes */
+.navbar {
+    background-color: var(--dark-accent) !important;
+}
+
+.dandelion-bg {
+    background-color: var(--dandelion);
+}
+
+.gold-text {
+    color: var(--gold);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+/* Aesthetic Card Design */
+.aesthetic-card {
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--gold) !important;
+}
+
+.aesthetic-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Personal Research Feature: Dark Mode Support */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
