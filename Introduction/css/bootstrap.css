@@ -1,57 +1,42 @@
-/* * Custom Styles for John Patrick 
-* Dandelion Gold Color Scheme
-*/
-
-:root {
-    --dandelion: #F4C430;
-    --gold: #D4AF37;
-    --soft-yellow: #FFF9E3;
-    --dark-accent: #2c2c2c;
-}
-
+/* Custom Aesthetic Additions for John Patrick */
 body {
     font-family: 'Poppins', sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #fffef2; /* Very light dandelion tint */
+    transition: all 0.3s ease;
 }
 
-/* Gold/Yellowish Scheme Classes */
-.navbar {
-    background-color: var(--dark-accent) !important;
+.dandelion-header {
+    background: linear-gradient(to right, #FFD700, #F4C430);
+    border-bottom: 5px solid #D4AF37;
 }
 
-.dandelion-bg {
-    background-color: var(--dandelion);
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circle shape */
+    border: 6px solid white;
+    object-fit: cover;
+}
+
+.border-gold {
+    border-left: 6px solid #DAA520 !important;
 }
 
 .gold-text {
-    color: var(--gold);
+    color: #B8860B;
 }
 
-.bg-gold {
-    background-color: var(--gold);
-}
-
-/* Aesthetic Card Design */
-.aesthetic-card {
-    transition: transform 0.3s ease;
-    border-top: 5px solid var(--gold) !important;
-}
-
-.aesthetic-card:hover {
-    transform: translateY(-10px);
-}
-
-/* Personal Research Feature: Dark Mode Support */
+/* Personal Research: Dark Mode Styles (W3Schools style) */
 .dark-mode {
-    background-color: #121212 !important;
-    color: #ffffff !important;
+    background-color: #1a1a1a !important;
+    color: #f1f1f1 !important;
 }
 
-.dark-mode .card {
-    background-color: #1e1e1e;
+.dark-mode .bg-white {
+    background-color: #2d2d2d !important;
     color: white;
 }
 
-.dark-mode .bg-light {
-    background-color: #1e1e1e !important;
+.dark-mode .text-muted {
+    color: #FFD700 !important;
 }

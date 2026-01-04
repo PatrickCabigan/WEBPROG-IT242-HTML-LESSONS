@@ -5,65 +5,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Personal Profile of John Patrick Cabigan" />
         <meta name="author" content="John Patrick Cabigan" />
-        <title>John Patrick | Portfolio</title>
+        <title>John Patrick | IT242 Portfolio</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">JP.CABIGAN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm mt-1">Toggle Theme</button>
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item">
+                             <button onclick="toggleDarkMode()" class="btn btn-outline-warning btn-sm ms-lg-3 mt-1">Aesthetic Mode</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <header class="py-5 dandelion-bg text-dark text-center shadow-sm" id="home">
+        
+        <header class="py-5 dandelion-header mb-5">
             <div class="container px-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bolder mb-2">John Patrick Cabigan</h1>
-                        <p class="lead mb-4">Section IT242 | Taguig City Resident</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <img src="https://via.placeholder.com/200" alt="John Patrick Cabigan" class="profile-circle shadow">
+                    </div>
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h1 class="display-4 fw-bolder">John Patrick Cabigan</h1>
+                        <p class="lead fw-normal text-muted">IT242 Student | Taguig City</p>
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="container my-5" id="about">
-            <div class="row g-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm aesthetic-card">
-                        <div class="card-body">
-                            <h3 class="h4 gold-text border-bottom pb-2">Academic Foundation</h3>
-                            <ul class="list-unstyled pt-3">
-                                <li class="mb-2"><strong>Elementary:</strong> FTJCA</li>
-                                <li class="mb-2"><strong>Junior High:</strong> SVNHS</li>
-                                <li class="mb-2"><strong>Senior High:</strong> SVNHS</li>
-                            </ul>
-                        </div>
+                    <div class="p-4 bg-white shadow-sm border-gold rounded-3 h-100">
+                        <h2 class="h4 fw-bold gold-text">Academic Foundation</h2>
+                        <hr>
+                        <p><strong>Elementary:</strong> FTJCA</p>
+                        <p><strong>High School:</strong> SVNHS (Junior & Senior Years)</p>
                     </div>
                 </div>
-
                 <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm aesthetic-card">
-                        <div class="card-body">
-                            <h3 class="h4 gold-text border-bottom pb-2">Interests & Hobbies</h3>
-                            <div class="d-flex flex-wrap gap-2 pt-3">
-                                <span class="badge rounded-pill bg-gold">Airplane Models</span>
-                                <span class="badge rounded-pill bg-gold">Manga Collecting</span>
-                                <span class="badge rounded-pill bg-gold">Cinema</span>
-                                <span class="badge rounded-pill bg-gold">Image Editing</span>
-                                <span class="badge rounded-pill bg-gold">Art Design</span>
+                    <div class="p-4 bg-white shadow-sm border-gold rounded-3 h-100">
+                        <h2 class="h4 fw-bold gold-text">Creative & Hobbies</h2>
+                        <hr>
+                        <p>Collecting airplane models and manga, cinema enthusiast, image editing, and art design.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="p-4 bg-white shadow-sm border-gold rounded-3">
+                        <h2 class="h4 fw-bold gold-text">Technical Background</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p><strong>Development:</strong> Python (Games), Java (Apps), OutSystems</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><strong>Tools:</strong> HTML, GitHub, Image Editing Tools</p>
                             </div>
                         </div>
                     </div>
@@ -71,30 +74,7 @@
             </div>
         </div>
 
-        <section class="bg-light py-5" id="skills">
-            <div class="container px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder gold-text">Technical Background</h2>
-                    <p class="lead mb-0">Practical skills and development experience</p>
-                </div>
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h3 class="h4 fw-bolder">Web & Tools</h3>
-                        <p>Experience with OutSystems, HTML, and GitHub for modern development workflows.</p>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h3 class="h4 fw-bolder">Game Dev</h3>
-                        <p>Developing interactive experiences and logic using Python.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3 class="h4 fw-bolder">Applications</h3>
-                        <p>Building robust software and functional applications with Java.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-       <script src="js/scripts.js"></script>
+        <script src="js/javascript.js"></script>
     </body>
 </html>
