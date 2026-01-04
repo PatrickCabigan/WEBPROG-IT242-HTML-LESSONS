@@ -1,14 +1,16 @@
+
 function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle("dark-theme");
+    // We target the 'body' element
+    var element = document.body;
     
-    // Check if it's working in the console
-    if(body.classList.contains("dark-theme")) {
-        console.log("Dark Mode Active");
-    } else {
-        console.log("Light Mode Active");
-    }
+    // We toggle the class 'dark-mode' defined in our CSS
+    element.classList.toggle("dark-mode");
+    
+    // Logic check in console (F12 to see)
+    console.log("Aesthetic mode has been toggled!");
 }
 
-// Research check from W3Schools
-console.log("John Patrick's script is successfully linked!");
+// Optional: Console log to verify the file is connected upon loading
+window.onload = function() {
+    console.log("javascript.js is successfully connected to index.html");
+};

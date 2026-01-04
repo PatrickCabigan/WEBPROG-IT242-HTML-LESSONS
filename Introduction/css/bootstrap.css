@@ -1,43 +1,42 @@
-:root {
-    --dandelion: #FFD700;
-    --gold: #DAA520;
-    --white: #ffffff;
-}
-
+/* Custom Aesthetic Additions for John Patrick */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fffef2;
-    transition: 0.3s;
+    background-color: #fffef2; /* Very light dandelion tint */
+    transition: all 0.3s ease;
 }
 
-/* Header Styling */
-.hero-section {
-    background: linear-gradient(135deg, var(--dandelion), var(--gold));
-    border-bottom: 8px solid rgba(0,0,0,0.05);
+.dandelion-header {
+    background: linear-gradient(to right, #FFD700, #F4C430);
+    border-bottom: 5px solid #D4AF37;
 }
 
 .profile-circle {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid var(--white);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circle shape */
+    border: 6px solid white;
     object-fit: cover;
 }
 
-/* Card Styling */
-.aesthetic-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    border-left: 5px solid var(--gold);
-    height: 100%;
+.border-gold {
+    border-left: 6px solid #DAA520 !important;
 }
 
-.gold-text { color: var(--gold); font-weight: 600; }
+.gold-text {
+    color: #B8860B;
+}
 
-/* Dark Mode Logic */
-.dark-theme { background-color: #121212 !important; color: #eee !important; }
-.dark-theme .aesthetic-card { background-color: #1e1e1e; color: white; border-left-color: var(--dandelion); }
-.dark-theme .hero-section { background: #1e1e1e; border-bottom: 2px solid var(--dandelion); }
+/* Personal Research: Dark Mode Styles (W3Schools style) */
+.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .bg-white {
+    background-color: #2d2d2d !important;
+    color: white;
+}
+
+.dark-mode .text-muted {
+    color: #FFD700 !important;
+}
