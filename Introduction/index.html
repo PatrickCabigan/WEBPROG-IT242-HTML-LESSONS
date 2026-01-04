@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>John Patrick | Portfolio</title>
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    </head>
-    <body id="page-body">
-        <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top shadow-sm">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#">JP.CABIGAN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bareNavbar" aria-controls="bareNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="bareNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link px-3" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#interests">Interests</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <button onclick="toggleTheme()" class="btn btn-dark btn-sm fw-bold mt-1">✨ Theme</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>John Patrick | Portfolio</title>
 
-        <header class="hero-header py-5 text-center">
-            <div class="container">
-                <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/adg.png?raw=true" class="profile-circle mb-3 shadow" alt="Profile">
-                <h1 class="display-4 fw-bold">John Patrick Cabigan</h1>
-                <p class="lead">Section IT242 • Taguig City Resident</p>
-            </div>
-        </header>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
 
-        <div class="container my-5">
-            <div class="row g-5">
-                <div class="col-lg-6" id="education">
-                    <div class="info-card h-100">
-                        <h2 class="h4 gold-text border-bottom pb-2 mb-4">Academic Foundation</h2>
-                        <div class="d-flex align-items-center mb-4">
-                            <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/ftjca-removebg-preview.png?raw=true" class="school-logo me-3" alt="FTJCA Logo">
-                            <div><strong>FTJCA</strong><br><small class="text-muted">Elementary</small></div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/svnhs-removebg-preview.png?raw=true" class="school-logo me-3" alt="SVNHS Logo">
-                            <div><strong>SVNHS</strong><br><small class="text-muted">Junior & Senior High</small></div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-                <div class="col-lg-6" id="interests">
-                    <div class="info-card h-100">
-                        <h2 class="h4 gold-text border-bottom pb-2 mb-4">Interests & Hobbies</h2>
-                        <p>✈️ <strong>Collections:</strong> Airplane models and Manga series.</p>
-                        <p>🎬 <strong>Creativity:</strong> Cinema movies, Art Design, and Image Editing.</p>
-                        <p>🤝 <strong>Social:</strong> Hanging out with friends.</p>
-                    </div>
-                </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-                <div class="col-md-6">
-                    <div class="info-card h-100">
-                        <h3 class="h5 gold-text border-bottom pb-2 mb-3">Technical Skills</h3>
-                        <p>Python (Game Development), Java (Applications), OutSystems, HTML, and GitHub.</p>
-                    </div>
-                </div>
+<body id="page-body">
 
-                <div class="col-md-6" id="contact">
-                    <div class="info-card h-100 contact-box">
-                        <h3 class="h5 gold-text border-bottom pb-2 mb-3">Location & Contact</h3>
-                        <p class="mb-2">📍 <strong>City:</strong> Taguig City</p>
-                        <p class="mb-0">📧 <strong>Email:</strong> [Your Email Here]</p>
-                    </div>
-                </div>
+    <!-- FIXED & CLEAN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">JP.CABIGAN</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button onclick="toggleTheme()" class="btn btn-dark btn-sm fw-bold">✨ Theme</button>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/javascript.js"></script>
-    </body>
+    <!-- HERO SECTION -->
+    <header class="hero-header text-center py-5 section-gap">
+        <div class="container">
+            <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/adg.png?raw=true" class="profile-circle mb-3" alt="Profile">
+            
+            <h1 class="display-5 fw-bold">John Patrick Cabigan</h1>
+            <p class="lead mb-2">Section IT242 • Taguig City Resident</p>
+
+            <!-- NEW PERSONAL BIO -->
+            <p class="bio">
+                I’m 5'11 ft tall, a manga collector, and an airplane enthusiast (commercial airliners!). 
+                I love bonding with friends, exploring new places, and learning creative digital hobbies such as 
+                photo editing and art design. I’m also passionate about tech, traveling, and discovering new experiences.
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container section-gap">
+        <div class="row g-5">
+
+            <!-- EDUCATION -->
+            <div class="col-lg-6" id="education">
+                <div class="info-card h-100">
+                    <h2 class="h4 gold-text border-bottom pb-2 mb-4">Academic Foundation</h2>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/ftjca-removebg-preview.png?raw=true" class="school-logo me-3" alt="FTJCA Logo">
+                        <div><strong>FTJCA</strong><br><small class="text-muted">Elementary</small></div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/svnhs-removebg-preview.png?raw=true" class="school-logo me-3" alt="SVNHS Logo">
+                        <div><strong>SVNHS</strong><br><small class="text-muted">Junior & Senior High</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERESTS -->
+            <div class="col-lg-6" id="interests">
+                <div class="info-card h-100">
+                    <h2 class="h4 gold-text border-bottom pb-2 mb-4">Interests & Hobbies</h2>
+                    <p>✈️ <strong>Collections:</strong> Airplane models and Manga.</p>
+                    <p>🎬 <strong>Creativity:</strong> Movies, Design, Image Editing.</p>
+                    <p>🤝 <strong>Social:</strong> Bonding with friends.</p>
+                </div>
+            </div>
+
+            <!-- TECH SKILLS -->
+            <div class="col-md-6">
+                <div class="info-card h-100">
+                    <h3 class="h5 gold-text border-bottom pb-2 mb-3">Technical Skills</h3>
+                    <p>Python (Game Dev), Java, HTML, OutSystems, GitHub.</p>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-md-6" id="contact">
+                <div class="info-card contact-box h-100">
+                    <h3 class="h5 gold-text border-bottom pb-2 mb-3">Location & Contact</h3>
+                    <p class="mb-2">📍 <strong>City:</strong> Taguig City</p>
+                    <p>📧 <strong>Email:</strong> yourname@email.com
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/javascript.js"></script>
+
+</body>
 </html>
