@@ -7,31 +7,31 @@
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     </head>
-    <body id="page-content">
-        <nav class="navbar navbar-expand-lg navbar-dark dandelion-nav sticky-top shadow-sm">
+    <body id="page-body">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">JP.CABIGAN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bareNavbar" aria-controls="bareNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navMenu">
+                <div class="collapse navbar-collapse" id="bareNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#interests">Interests</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
                         <li class="nav-item ms-lg-3">
-                            <button onclick="toggleDarkMode()" class="btn btn-dark btn-sm fw-bold">✨ Theme</button>
+                            <button onclick="toggleTheme()" class="btn btn-dark btn-sm fw-bold mt-1">✨ Theme</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <header class="hero-section text-center py-5">
+        <header class="hero-header py-5 text-center">
             <div class="container">
-                <img src="https://via.placeholder.com/150" alt="Profile" class="profile-circle mb-3">
-                <h1 class="display-5 fw-bold">John Patrick Cabigan</h1>
-                <p class="lead">IT242 • Taguig City</p>
+                <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/adg.png?raw=true" class="profile-circle mb-3 shadow" alt="Profile">
+                <h1 class="display-4 fw-bold">John Patrick Cabigan</h1>
+                <p class="lead">Section IT242 • Taguig City Resident</p>
             </div>
         </header>
 
@@ -40,22 +40,38 @@
                 <div class="col-lg-6" id="education">
                     <div class="info-card h-100">
                         <h2 class="h4 gold-text border-bottom pb-2 mb-4">Academic Foundation</h2>
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://via.placeholder.com/50" class="school-logo me-3" alt="Logo">
-                            <p class="mb-0"><strong>FTJCA</strong> - Elementary</p>
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/ftjca-removebg-preview.png?raw=true" class="school-logo me-3" alt="FTJCA Logo">
+                            <div><strong>FTJCA</strong><br><small class="text-muted">Elementary</small></div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <img src="https://via.placeholder.com/50" class="school-logo me-3" alt="Logo">
-                            <p class="mb-0"><strong>SVNHS</strong> - Junior/Senior High</p>
+                            <img src="https://github.com/PatrickCabigan/WEBPROG-IT242-HTML-LESSONS/blob/feature/2_JPC_customize_my_website/svnhs-removebg-preview.png?raw=true" class="school-logo me-3" alt="SVNHS Logo">
+                            <div><strong>SVNHS</strong><br><small class="text-muted">Junior & Senior High</small></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" id="contact">
-                    <div class="info-card h-100 contact-shade">
-                        <h2 class="h4 gold-text border-bottom pb-2 mb-4">Contact Info</h2>
-                        <p>📍 Taguig City, Philippines</p>
-                        <p>📧 Email: [Enter Email Here]</p>
-                        <p>💻 Section: IT242</p>
+
+                <div class="col-lg-6" id="interests">
+                    <div class="info-card h-100">
+                        <h2 class="h4 gold-text border-bottom pb-2 mb-4">Interests & Hobbies</h2>
+                        <p>✈️ <strong>Collections:</strong> Airplane models and Manga series.</p>
+                        <p>🎬 <strong>Creativity:</strong> Cinema movies, Art Design, and Image Editing.</p>
+                        <p>🤝 <strong>Social:</strong> Hanging out with friends.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card h-100">
+                        <h3 class="h5 gold-text border-bottom pb-2 mb-3">Technical Skills</h3>
+                        <p>Python (Game Development), Java (Applications), OutSystems, HTML, and GitHub.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="contact">
+                    <div class="info-card h-100 contact-box">
+                        <h3 class="h5 gold-text border-bottom pb-2 mb-3">Location & Contact</h3>
+                        <p class="mb-2">📍 <strong>City:</strong> Taguig City</p>
+                        <p class="mb-0">📧 <strong>Email:</strong> [Your Email Here]</p>
                     </div>
                 </div>
             </div>

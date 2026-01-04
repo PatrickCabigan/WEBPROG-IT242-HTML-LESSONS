@@ -1,6 +1,8 @@
-function toggleDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+// Toggle logic for John Patrick
+function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+    console.log("Aesthetic mode changed!");
 }
 
-console.log("Nav Bar Fixed and Theme connected!");
+// Log check
+console.log("javascript.js linked and active.");

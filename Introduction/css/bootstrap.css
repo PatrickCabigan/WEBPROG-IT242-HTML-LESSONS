@@ -1,24 +1,21 @@
-/* Custom Dandelion Styling */
-:root {
-    --dark-dandelion: #8B6914; /* Darker shade of yellow/gold */
-    --bright-dandelion: #FFD700;
-    --gold: #DAA520;
-}
-
+/* John Patrick's Aesthetic CSS */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fffdf5;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-/* FIXING THE NAV BAR COLOR */
-.dandelion-nav {
-    background-color: var(--dark-dandelion) !important;
+/* DARKENED GOLD NAVBAR - NEAT & PROFESSIONAL */
+.custom-nav {
+    background-color: #8B6914 !important; /* Dark Goldenrod */
+    padding: 0.8rem 0;
 }
 
-.hero-section {
-    background: linear-gradient(to bottom, var(--bright-dandelion), var(--gold));
-    border-bottom: 5px solid var(--dark-dandelion);
+.navbar-brand { letter-spacing: 1px; }
+
+.hero-header {
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    border-bottom: 5px solid #8B6914;
 }
 
 .profile-circle {
@@ -29,32 +26,27 @@ body {
     object-fit: cover;
 }
 
-/* SPACING FOR INFO COLUMNS */
+/* SPACING & CARDS */
 .info-card {
     background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border-top: 5px solid var(--gold);
-}
-
-.contact-shade {
-    background-color: #fff9e6;
+    padding: 40px; /* High internal space */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 5px solid #DAA520;
 }
 
 .school-logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
+    background: #fdfdfd;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-.gold-text { color: var(--dark-dandelion); }
+.gold-text { color: #8B6914; font-weight: 600; }
+.contact-box { background-color: #fff9e6; }
 
-/* MOBILE RESPONSIVE TWEAK */
-@media (max-width: 992px) {
-    .hero-section h1 { font-size: 2.5rem; }
-}
-
-/* Dark Mode Logic */
-.dark-mode { background-color: #121212 !important; color: white !important; }
-.dark-mode .info-card { background-color: #222; color: white; }
+/* DARK MODE */
+.dark-theme { background-color: #121212 !important; color: white !important; }
+.dark-theme .info-card { background-color: #1e1e1e; color: white; }
