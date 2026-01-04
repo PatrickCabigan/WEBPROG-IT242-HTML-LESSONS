@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf5;
+    margin: 0;
+}
+
+/* NAVIGATION */
+.custom-nav {
+    background-color: #8B6914;
+    padding: 0.8rem 0;
+}
+
+/* HERO SECTION */
+.hero-header {
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    border-bottom: 5px solid #8B6914;
+}
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.description-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* CARDS */
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border-top: 5px solid #DAA520;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: contain;
+    background: #fff;
+    padding: 5px;
+}
+
+.gold-text {
+    color: #8B6914;
+}
+
+.contact-box {
+    background: #fff9e6;
+}
+
+/* DARK THEME */
+.dark-theme {
+    background: #121212;
+    color: #fff;
+}
+
+.dark-theme .info-card {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.dark-theme .custom-nav {
+    background: #333;
+}
