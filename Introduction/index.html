@@ -3,72 +3,72 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Personal Profile of John Patrick Cabigan" />
-        <meta name="author" content="John Patrick Cabigan" />
-        <title>John Patrick | IT242 Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <title>John Patrick Cabigan | Portfolio</title>
         <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="page-body">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">JP.CABIGAN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item">
-                             <button onclick="toggleDarkMode()" class="btn btn-outline-warning btn-sm ms-lg-3 mt-1">Aesthetic Mode</button>
+                <a class="navbar-brand fw-bold dandelion-text" href="#">JP.CABIGAN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bareNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bareNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <button onclick="toggleDarkMode()" class="btn btn-warning btn-sm">Theme</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
-        <header class="py-5 dandelion-header mb-5">
-            <div class="container px-5">
+
+        <header class="dandelion-header py-5">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
-                        <img src="https://via.placeholder.com/200" alt="John Patrick Cabigan" class="profile-circle shadow">
+                    <div class="col-lg-3 text-center mb-4">
+                        <img src="https://via.placeholder.com/180" class="profile-circle shadow" alt="Profile">
                     </div>
                     <div class="col-lg-9 text-center text-lg-start">
-                        <h1 class="display-4 fw-bolder">John Patrick Cabigan</h1>
-                        <p class="lead fw-normal text-muted">IT242 Student | Taguig City</p>
+                        <h1 class="display-4 fw-bold">John Patrick Cabigan</h1>
+                        <p class="lead">Section IT242 • Taguig City Resident</p>
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="container">
-            <div class="row g-4 mb-5">
-                <div class="col-md-6">
-                    <div class="p-4 bg-white shadow-sm border-gold rounded-3 h-100">
-                        <h2 class="h4 fw-bold gold-text">Academic Foundation</h2>
-                        <hr>
-                        <p><strong>Elementary:</strong> FTJCA</p>
-                        <p><strong>High School:</strong> SVNHS (Junior & Senior Years)</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-white shadow-sm border-gold rounded-3 h-100">
-                        <h2 class="h4 fw-bold gold-text">Creative & Hobbies</h2>
-                        <hr>
-                        <p>Collecting airplane models and manga, cinema enthusiast, image editing, and art design.</p>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="p-4 bg-white shadow-sm border-gold rounded-3">
-                        <h2 class="h4 fw-bold gold-text">Technical Background</h2>
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p><strong>Development:</strong> Python (Games), Java (Apps), OutSystems</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><strong>Tools:</strong> HTML, GitHub, Image Editing Tools</p>
-                            </div>
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <div class="info-card">
+                        <h2 class="h4 gold-text border-bottom pb-2">Academic Foundation</h2>
+                        <div class="d-flex align-items-center mt-3 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" class="school-logo me-3" alt="FTJCA Logo">
+                            <div><strong>Elementary:</strong> FTJCA</div>
                         </div>
+                        <div class="d-flex align-items-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" class="school-logo me-3" alt="SVNHS Logo">
+                            <div><strong>High School:</strong> SVNHS (Junior & Senior)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5" id="contact">
+                    <div class="info-card contact-box">
+                        <h2 class="h4 gold-text border-bottom pb-2">Contact Me</h2>
+                        <p class="mt-3">📍 <strong>Location:</strong> Taguig City</p>
+                        <p>📧 <strong>Email:</strong> your-email@example.com</p>
+                        <p>💻 <strong>Skills:</strong> Python, Java, OutSystems</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="info-card">
+                        <h2 class="h4 gold-text">Interests & Hobbies</h2>
+                        <p>Collecting airplane models, manga, cinema, and exploring art design/image editing.</p>
                     </div>
                 </div>
             </div>

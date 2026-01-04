@@ -1,42 +1,18 @@
-/* Custom Aesthetic Additions for John Patrick */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fffef2; /* Very light dandelion tint */
-    transition: all 0.3s ease;
-}
+body { font-family: 'Poppins', sans-serif; background-color: #fffef2; transition: 0.4s; }
+.dandelion-text { color: #FFD700 !important; }
+.gold-text { color: #DAA520; font-weight: 600; }
 
-.dandelion-header {
-    background: linear-gradient(to right, #FFD700, #F4C430);
-    border-bottom: 5px solid #D4AF37;
-}
+.dandelion-header { background: linear-gradient(135deg, #FFD700, #F4C430); border-bottom: 5px solid #D4AF37; }
 
-.profile-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Circle shape */
-    border: 6px solid white;
-    object-fit: cover;
-}
+.profile-circle { width: 180px; height: 180px; border-radius: 50%; border: 6px solid white; object-fit: cover; }
 
-.border-gold {
-    border-left: 6px solid #DAA520 !important;
-}
+/* SCHOOL LOGO STYLING */
+.school-logo { width: 50px; height: 50px; object-fit: contain; border-radius: 8px; background: #fffdf2; padding: 2px; border: 1px solid #ddd; }
 
-.gold-text {
-    color: #B8860B;
-}
+.info-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: 100%; border-left: 5px solid #FFD700; }
 
-/* Personal Research: Dark Mode Styles (W3Schools style) */
-.dark-mode {
-    background-color: #1a1a1a !important;
-    color: #f1f1f1 !important;
-}
+.contact-box { background: #fef9e7; border-left-color: #DAA520; }
 
-.dark-mode .bg-white {
-    background-color: #2d2d2d !important;
-    color: white;
-}
-
-.dark-mode .text-muted {
-    color: #FFD700 !important;
-}
+/* DARK MODE */
+.dark-theme { background-color: #1a1a1a !important; color: white !important; }
+.dark-theme .info-card { background-color: #2d2d2d; color: white; }
