@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fffdf5;
     margin: 0;
-    transition: background 0.3s ease;
+    transition: background 0.5s ease, transform 0.3s ease; /* Added transform for the pop */
 }
 
 /* NAVIGATION */
@@ -37,7 +37,7 @@ body {
     border-radius: 20px;
     border-top: 5px solid #DAA520;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
 .info-card:hover {
@@ -50,8 +50,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    height: 350px; /* Fixed height for neatness */
-    background-color: #fcf8e3; /* Light dandelion tint for empty space */
+    height: 350px;
+    background-color: #fcf8e3;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.4s ease;
     display: flex;
@@ -62,7 +62,7 @@ body {
 .anime-card img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* FIXED: Now shows the whole image */
+    object-fit: contain;
     transition: transform 0.5s ease;
     padding: 10px;
 }
@@ -95,8 +95,27 @@ body {
 .gold-text { color: #8B6914; }
 .contact-box { background: #fff9e6; }
 
-/* DARK THEME */
-.dark-theme { background: #121212; color: #fff; }
-.dark-theme .info-card { background: #1e1e1e; color: #fff; }
-.dark-theme .custom-nav { background: #333; }
-.dark-theme .hero-header { background: #222; border-bottom-color: #FFD700; }
+/* --- DARK THEME: FUTURISTIC ANIMATION --- */
+.dark-theme { 
+    background: linear-gradient(270deg, #121212, #1a1a1a, #2c2401, #121212);
+    background-size: 600% 600%;
+    animation: futuristicFlow 10s ease infinite;
+    color: #fff; 
+}
+
+@keyframes futuristicFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dark-theme .info-card { 
+    background: rgba(30, 30, 30, 0.8) !important; 
+    backdrop-filter: blur(10px); /* Futuristic glass effect */
+    color: #fff; 
+    border: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+.dark-theme .custom-nav { background: #1a1a1a; }
+.dark-theme .hero-header { background: #121212; border-bottom-color: #FFD700; }
+.dark-theme .gold-text { color: #FFD700; }
